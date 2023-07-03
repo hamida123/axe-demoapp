@@ -20,7 +20,7 @@ jobs:
     - name: Build the new release :latest
       run: docker build -t hamidadocker/sagem-demo:v3.0 .
 
-    - name: Push to docker hub :latest
+    - name: Push to docker  hub :latest
       uses: actions-hub/docker@master
       with:
        args: push hamidadocker/sagem-demo:v3.0
